@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>贪吃蛇!</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection">
+  <link rel="stylesheet" href="css/blueprint/print.css" media="print">
+  <!--[if IE]><link rel="stylesheet" href="css/blueprint/ie.css" media="screen, projection"><![endif]-->
+  <link rel="stylesheet" href="css/blueprint/plugins.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/snake.css">
+  <style>
+  .g-menu {
+    padding: 10px;
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  .g-menu > div {
+    margin-bottom: 5px;
+  }
+
+  .g-gamebox {
+    width: 390px;
+    margin: 0 auto;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="g-menu">
+    <div id="leftshezhi">
+      <select name="level" id="level">
+        <option value="1" selected="selected">入门</option>
+        <option value="2">简单</option>
+        <option value="3">中等</option>
+        <option value="4">困难</option>
+        <option value="5">专家</option>
+      </select>
+    </div>
+    <div id="leftcaozuo">
+      <a href="javascript:void(0)" class="u-btn z-enable" data-st="0" id="start">开始游戏</a>
+      <a href="javascript:void(0)" class="u-btn z-disabled" id="pause">暂停游戏</a>
+      <a href="javascript:void(0)" class="u-btn z-disabled" id="stop">结束游戏</a>
+    </div>
+    <div id="leftzhuangtai">
+      时间：
+      <span class="u-record" id="elapsedTime">0</span> 已吃掉：
+      <span class="u-record" id="eatCount">0</span>
+    </div>
+    <div class="des">不能和自己身体相撞，可以穿越边界</div>
+  </div>
+  <div class="g-gamebox">
+    <div class="m-game" id="main"></div>
+  </div>
+  <script src="js/mootools.js"></script>
+  <script src="js/game.js"></script>
+</body>
+
+</html>

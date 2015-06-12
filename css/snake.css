@@ -1,0 +1,25 @@
+
+
+#gameTable td
+{
+	width:30px;
+  	height:30px;
+	border-right:1px solid #dddddd;
+	border-bottom:1px solid #dddddd;
+	border-left:1px solid #ffffff;
+	border-top:1px solid #ffffff;
+	background-color:#F7E9D4;
+	text-align:center;
+	padding:0;
+}
+
+#gameTable .snake
+{
+	background-color:#EC870E;
+}
+
+#gameTable .food
+{
+	background-color:green;
+}
+
